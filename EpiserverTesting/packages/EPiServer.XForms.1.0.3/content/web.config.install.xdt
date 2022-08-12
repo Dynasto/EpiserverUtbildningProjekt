@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <episerver.shell xdt:Transform="InsertIfMissing">
+    <protectedModules rootPath="~/EPiServer/" xdt:Transform="InsertIfMissing">
+      <add name="EPiServer.XForms" xdt:Transform="InsertIfMissing" xdt:Locator="Match(name)"/>
+    </protectedModules>
+  </episerver.shell>
+  <system.web xdt:Transform="InsertIfMissing">
+    <pages xdt:Transform="InsertIfMissing">
+      <controls xdt:Transform="InsertIfMissing">
+        <add tagPrefix="XForms" namespace="EPiServer.XForms.WebControls" assembly="EPiServer.XForms" xdt:Transform="InsertIfMissing" xdt:Locator="Match(assembly)"/>
+      </controls>
+    </pages>
+  </system.web>
+</configuration>

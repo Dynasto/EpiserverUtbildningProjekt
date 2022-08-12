@@ -1,0 +1,30 @@
+﻿@using AlloyAdvanced.Features.SecurityLog
+@model SecurityLogPageViewModel
+<div class="row">
+    <div class="span12">
+        <h3>Security Log <small>Most recent 50 entries.</small></h3>
+        <table class="table table-bordered table-condensed table-striped" style="font-size: smaller;">
+            <tr>
+                <th>Modified</th>
+                <th>Modified By</th>
+                <th>Content Reference</th>
+                <th>Content Name</th>
+                <th>Inherited</th>
+                <th>Entries</th>
+                <th>Save Type</th>
+            </tr>
+            @foreach (SecurityLogEntry log in Model.Entries)
+            {
+            <tr>
+                <td>@log.Modified</td>
+                <td>@log.ModifiedBy</td>
+                <td>@log.ContentLink</td>
+                <td>@log.ContentName</td>
+                <td>@log.IsInherited</td>
+                <td>@Html.Raw(string.Join(" ", log.Entries.Select(ace => string.Format("<span class=\"label label-info\">{0} {1} has {2}</span>", ace.Name, ace.EntityType, ace.Access))))</td>
+                <td>@log.SecuritySaveType</td>
+            </tr>
+            }
+        </table>
+    </div>
+</div>

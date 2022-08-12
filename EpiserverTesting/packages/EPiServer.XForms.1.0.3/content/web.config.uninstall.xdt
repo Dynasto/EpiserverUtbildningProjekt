@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <episerver.shell>
+    <protectedModules>
+      <add name="EPiServer.XForms" xdt:Transform="Remove" xdt:Locator="Match(name)"/>
+    </protectedModules>
+  </episerver.shell>
+  <system.web>
+    <pages>
+      <controls>
+        <add tagPrefix="XForms" namespace="EPiServer.XForms.WebControls" assembly="EPiServer.XForms" xdt:Transform="Remove" xdt:Locator="Match(assembly)"/>
+      </controls>
+    </pages>
+  </system.web>
+</configuration>

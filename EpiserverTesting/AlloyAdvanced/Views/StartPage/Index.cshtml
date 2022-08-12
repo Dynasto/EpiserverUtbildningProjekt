@@ -1,0 +1,35 @@
+@using AlloyAdvanced
+@using EPiServer.ServiceLocation;
+@using EPiServer.Core;
+@using EPiServer;
+@model PageViewModel<AlloyAdvanced.Models.Pages.StartPage>
+@{
+    var contentLoader = ServiceLocator.Current.GetInstance<IContentLoader>();
+}
+
+@Html.PropertyFor(x => x.CurrentPage.MainContentArea, new { CssClass = "row equal-height", tag = AlloyAdvanced.Global.ContentAreaTags.FullWidth })
+<br />
+@Html.PropertyFor(x => x.CurrentPage.EventListAsContentArea, new { CssClass = "row equal-height", tag = AlloyAdvanced.Global.ContentAreaTags.FullWidth })
+<br />
+<div style="border:black solid 1px;">
+    loop
+
+    @foreach (var tempEvent in Model.CurrentPage.EventListAsListOfContentReferences)
+    {
+        var item = contentLoader.Get<EventBlock>(tempEvent);
+        @Html.PropertyFor(x => item)
+        <hr />
+    }
+</div>
+
+<br />
+@{
+    var content = contentLoader.GetChildren<EventBlock>(Model.CurrentPage.EventListAsReferenceToAssetsFolder);
+    //new ContentAssetHelper().GetAssetFolder(content.ContentLink).
+    foreach (var item in content)
+    {
+        @Html.PropertyFor(x => item)
+    }
+    @*var item2 = contentLoader.Get<EventBlock>(content.ContentLink);
+        @item2.Description*@
+}

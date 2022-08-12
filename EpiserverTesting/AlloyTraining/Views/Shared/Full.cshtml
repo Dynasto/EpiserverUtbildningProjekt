@@ -1,0 +1,19 @@
+﻿@using AlloyTraining.Models.ViewModels
+@using AlloyTraining.Models.Pages
+@using EPiServer.Editor
+@model DefaultPageViewModel<SitePageData>
+
+
+<div class="block span12" style="background-color: lightyellow;">
+    <div class="border">
+        <a href="@Url.ContentUrl(Model.CurrentPage.ContentLink)">
+            <h2 @Html.EditAttributes(x => x.CurrentPage.Name)>@Model.CurrentPage.Name</h2>
+            <p class="introduction" @Html.EditAttributes(x => x.CurrentPage.MetaDescriptionMojs)>
+                @Model.CurrentPage.MetaDescriptionMojs
+            </p>
+            <div @Html.EditAttributes(x => x.CurrentPage.PageImageBild)>
+                <img src="@Url.ContentUrl(Model.CurrentPage.PageImageBild)" />
+            </div>
+        </a>
+    </div>
+</div>

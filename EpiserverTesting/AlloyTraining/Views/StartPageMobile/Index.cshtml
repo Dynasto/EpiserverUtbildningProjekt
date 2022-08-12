@@ -1,0 +1,20 @@
+﻿@using EPiServer.Core
+@using AlloyTraining.Models.ViewModels
+@using EPiServer.Web.Mvc.Html
+
+@model DefaultPageViewModel<AlloyTraining.Models.Pages.StartPage>
+
+<h2 @Html.EditAttributes(x => x.CurrentPage.Heading)>
+    @(Model.CurrentPage.Heading ?? Model.CurrentPage.Name)
+</h2>
+<div>
+    @Html.PropertyFor(m => m.CurrentPage.MainBody)
+</div>
+
+@*@Html.PropertyFor(x => x.CurrentPage.MainContentArea2, new { CssClass = "row equal-height hejsan svejsan" })*@
+<ul>
+    @foreach (var item in Model.CurrentPage.MainContentArea2.FilteredItems)
+    {
+        <li>@Html.ContentLink(item.ContentLink)</li>
+    }
+</ul>

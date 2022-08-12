@@ -1,0 +1,26 @@
+﻿@model PageViewModel<FAQListPage>
+<h2>Alloy FAQs</h2>
+<div class="navbar">
+    <h3>Enter your question</h3>
+    @using (Html.BeginForm(actionName: "CreateFAQItem", controllerName: null))
+    {
+        <input type="text" name="question" placeholder="Enter your question" />
+        <input type="submit" value="Submit" class="btn" />
+    }
+</div>
+@if (EPiServer.Editor.PageEditing.PageIsInEditMode)
+{
+    <div class="alert">
+        Questions do not appear until they have been answered by someone that works at this facility.
+    </div>
+}
+<div class="nav-stacked">
+    <h2>Questions with answers</h2>
+    @foreach (var q in Model.CurrentPage.FAQItems)
+    {
+        <h3>@q.Question</h3>
+        <p>Asked at @q.Created.ToShortTimeString()</p>
+        <p>Answered by @q.ChangedBy</p>
+        <p>@q.Answer</p>
+    }
+</div>

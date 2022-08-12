@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<languages>
+
+  <language name="Swedish" id="en">
+
+    <headings>
+      <heading name="Default">
+        <description>Default</description>
+      </heading>
+      <heading name="Nyheter">
+        <description>News</description>
+      </heading>
+      <heading name="Produkter">
+        <description>Products</description>
+      </heading>
+      <heading name="MetaData">
+        <description>Hejsanoptimering</description>
+      </heading>
+      <heading name="SiteSettings">
+        <description>Sivttings</description>
+      </heading>
+      <heading name="Specialized">
+        <description>Specialaren Arne</description>
+      </heading>
+    </headings>
+
+  </language>
+
+</languages>

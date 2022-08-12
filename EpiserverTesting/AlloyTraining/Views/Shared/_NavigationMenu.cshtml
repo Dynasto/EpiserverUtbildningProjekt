@@ -1,0 +1,40 @@
+﻿@using AlloyTraining.Business.ExtensionMethods
+@using AlloyTraining.Models.Pages
+@using AlloyTraining.Models.ViewModels
+@using EPiServer.Core
+@model IPageViewModel<SitePageData>
+<div class="alloyMenu">
+    <div class="navBar">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <div class="nav-collapse">
+
+                    <ul class="nav">
+                        <li class="@(Model.CurrentPage.ContentLink.CompareToIgnoreWorkID(ContentReference.StartPage) ? " active" : null)">
+                            @Html.ContentLink(ContentReference.StartPage)
+                        </li>
+                        @Html.MenuList(ContentReference.StartPage,
+                                @<li class="@(item.Selected?"active":"")" )>
+                                    @Html.PageLink(item.Page)
+                                </li>)
+                        <li>
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <a href="/en/logout">Log out</a>
+                            }
+                            else
+                            {
+                                <a href="@FormsAuthentication.LoginUrl?ReturnUrl=@Model.CurrentPage.PageLink.ExternalURLFromReference()">Logga in</a>
+                            }
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

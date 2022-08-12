@@ -1,0 +1,28 @@
+﻿@using AlloyTraining
+@using EPiServer.Web.Mvc.Html
+@model AlloyTraining.Models.ViewModels.PreviewPageViewModel
+
+<div class="well well-large">
+    <div class="row">
+        <div class="alert alert-info">Display Option: full (default)</div>
+    </div>
+    <div class="row">
+        @Html.PropertyFor(x => x.PreviewArea, new { Tag = SiteTagsHejsan.Full })
+    </div>
+</div>
+<div class="well well-large">
+    <div class="row">
+        <div class="alert alert-info span8">Display Option: wide</div>
+    </div>
+    <div class="row">
+        @Html.PropertyFor(x => x.PreviewArea, new { Tag = SiteTagsHejsan.Wide })
+    </div>
+</div>
+<div class="well well-large">
+    <div class="row">
+        <div class="alert alert-info span4">Display Option: narrow</div>
+    </div>
+    <div class="row">
+        @Html.PropertyFor(x => x.PreviewArea, new { Tag = SiteTagsHejsan.Narrow })
+    </div>
+</div>

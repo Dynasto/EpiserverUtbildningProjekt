@@ -1,0 +1,103 @@
+﻿2022-02-04 13:31:35,418 [38] ERROR EPiServer.Framework.Initialization.InitializationEngine: Initialize action failed for 'Initialize on class AlloyTraining.Business.Initialization.RegisterAdminInitializationModule, EpiserverTesting, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'
+System.Configuration.Provider.ProviderException: The Role Manager feature has not been enabled.
+   at System.Web.Security.Roles.EnsureEnabled()
+   at System.Web.Security.Roles.RoleExists(String roleName)
+   at AlloyTraining.Business.Initialization.RegisterAdminInitializationModule.Initialize(InitializationEngine context) in C:\Projects\EpiserverTests\EpiserverTesting\EpiserverTesting\Business\Initialization\RegisterAdminInitializationModule.cs:line 37
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.<>c__DisplayClass2_0.<Initialize>b__0()
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Execute(Action a, String key)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.InitializationEngine.InitializeModules()
+System.Configuration.Provider.ProviderException: The Role Manager feature has not been enabled.
+   at System.Web.Security.Roles.EnsureEnabled()
+   at System.Web.Security.Roles.RoleExists(String roleName)
+   at AlloyTraining.Business.Initialization.RegisterAdminInitializationModule.Initialize(InitializationEngine context) in C:\Projects\EpiserverTests\EpiserverTesting\EpiserverTesting\Business\Initialization\RegisterAdminInitializationModule.cs:line 37
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.<>c__DisplayClass2_0.<Initialize>b__0()
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Execute(Action a, String key)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.InitializationEngine.InitializeModules()
+2022-02-04 13:33:33,333 [51] ERROR EPiServer.Framework.Initialization.InitializationEngine: Initialize action failed for 'Initialize on class AlloyTraining.Business.Initialization.RegisterAdminInitializationModule, EpiserverTesting, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'
+System.Configuration.Provider.ProviderException: Default Membership Provider must be specified.
+   at System.Web.Security.Membership.InitializeDefaultProvider(Boolean initializeDefaultProvider, MembershipSection settings)
+   at System.Web.Security.Membership.Initialize()
+   at System.Web.Security.Membership.get_Provider()
+   at System.Web.Security.Membership.GetUser(String username, Boolean userIsOnline)
+   at System.Web.Security.Membership.GetUser(String username)
+   at AlloyTraining.Business.Initialization.RegisterAdminInitializationModule.Initialize(InitializationEngine context) in C:\Projects\EpiserverTests\EpiserverTesting\EpiserverTesting\Business\Initialization\RegisterAdminInitializationModule.cs:line 43
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.<>c__DisplayClass2_0.<Initialize>b__0()
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Execute(Action a, String key)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.InitializationEngine.InitializeModules()
+System.Configuration.Provider.ProviderException: Default Membership Provider must be specified.
+   at System.Web.Security.Membership.InitializeDefaultProvider(Boolean initializeDefaultProvider, MembershipSection settings)
+   at System.Web.Security.Membership.Initialize()
+   at System.Web.Security.Membership.get_Provider()
+   at System.Web.Security.Membership.GetUser(String username, Boolean userIsOnline)
+   at System.Web.Security.Membership.GetUser(String username)
+   at AlloyTraining.Business.Initialization.RegisterAdminInitializationModule.Initialize(InitializationEngine context) in C:\Projects\EpiserverTests\EpiserverTesting\EpiserverTesting\Business\Initialization\RegisterAdminInitializationModule.cs:line 43
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.<>c__DisplayClass2_0.<Initialize>b__0()
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Execute(Action a, String key)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.InitializationEngine.InitializeModules()
+2022-02-04 13:34:06,699 [51] ERROR EPiServer.Framework.Initialization.InitializationEngine: Initialize action failed for 'Initialize on class AlloyTraining.Business.Initialization.RegisterAdminInitializationModule, EpiserverTesting, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'
+System.Configuration.Provider.ProviderException: Default Membership Provider must be specified.
+   at System.Web.Security.Membership.InitializeDefaultProvider(Boolean initializeDefaultProvider, MembershipSection settings)
+   at System.Web.Security.Membership.Initialize()
+   at System.Web.Security.Membership.get_Provider()
+   at System.Web.Security.Membership.CreateUser(String username, String password, String email, String passwordQuestion, String passwordAnswer, Boolean isApproved, Object providerUserKey, MembershipCreateStatus& status)
+   at System.Web.Security.Membership.CreateUser(String username, String password, String email)
+   at AlloyTraining.Business.Initialization.RegisterAdminInitializationModule.Initialize(InitializationEngine context) in C:\Projects\EpiserverTests\EpiserverTesting\EpiserverTesting\Business\Initialization\RegisterAdminInitializationModule.cs:line 50
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.<>c__DisplayClass2_0.<Initialize>b__0()
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Execute(Action a, String key)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.InitializationEngine.InitializeModules()
+System.Configuration.Provider.ProviderException: Default Membership Provider must be specified.
+   at System.Web.Security.Membership.InitializeDefaultProvider(Boolean initializeDefaultProvider, MembershipSection settings)
+   at System.Web.Security.Membership.Initialize()
+   at System.Web.Security.Membership.get_Provider()
+   at System.Web.Security.Membership.CreateUser(String username, String password, String email, String passwordQuestion, String passwordAnswer, Boolean isApproved, Object providerUserKey, MembershipCreateStatus& status)
+   at System.Web.Security.Membership.CreateUser(String username, String password, String email)
+   at AlloyTraining.Business.Initialization.RegisterAdminInitializationModule.Initialize(InitializationEngine context) in C:\Projects\EpiserverTests\EpiserverTesting\EpiserverTesting\Business\Initialization\RegisterAdminInitializationModule.cs:line 50
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.<>c__DisplayClass2_0.<Initialize>b__0()
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Execute(Action a, String key)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.InitializationEngine.InitializeModules()
+2022-02-04 13:36:22,836 [51] ERROR EPiServer.Framework.Initialization.InitializationEngine: Initialize action failed for 'Initialize on class AlloyTraining.Business.Initialization.RegisterAdminInitializationModule, EpiserverTesting, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'
+System.Configuration.Provider.ProviderException: The Role Manager feature has not been enabled.
+   at System.Web.Security.Roles.EnsureEnabled()
+   at System.Web.Security.Roles.RoleExists(String roleName)
+   at AlloyTraining.Business.Initialization.RegisterAdminInitializationModule.Initialize(InitializationEngine context) in C:\Projects\EpiserverTests\EpiserverTesting\EpiserverTesting\Business\Initialization\RegisterAdminInitializationModule.cs:line 37
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.<>c__DisplayClass2_0.<Initialize>b__0()
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Execute(Action a, String key)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.InitializationEngine.InitializeModules()
+System.Configuration.Provider.ProviderException: The Role Manager feature has not been enabled.
+   at System.Web.Security.Roles.EnsureEnabled()
+   at System.Web.Security.Roles.RoleExists(String roleName)
+   at AlloyTraining.Business.Initialization.RegisterAdminInitializationModule.Initialize(InitializationEngine context) in C:\Projects\EpiserverTests\EpiserverTesting\EpiserverTesting\Business\Initialization\RegisterAdminInitializationModule.cs:line 37
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.<>c__DisplayClass2_0.<Initialize>b__0()
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Execute(Action a, String key)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.InitializationEngine.InitializeModules()
+2022-02-04 13:37:30,963 [51] ERROR EPiServer.Framework.Initialization.InitializationEngine: Initialize action failed for 'Initialize on class AlloyTraining.Business.Initialization.RegisterAdminInitializationModule, EpiserverTesting, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'
+System.Configuration.Provider.ProviderException: Default Membership Provider must be specified.
+   at System.Web.Security.Membership.InitializeDefaultProvider(Boolean initializeDefaultProvider, MembershipSection settings)
+   at System.Web.Security.Membership.Initialize()
+   at System.Web.Security.Membership.get_Provider()
+   at System.Web.Security.Membership.GetUser(String username, Boolean userIsOnline)
+   at System.Web.Security.Membership.GetUser(String username)
+   at AlloyTraining.Business.Initialization.RegisterAdminInitializationModule.Initialize(InitializationEngine context) in C:\Projects\EpiserverTests\EpiserverTesting\EpiserverTesting\Business\Initialization\RegisterAdminInitializationModule.cs:line 43
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.<>c__DisplayClass2_0.<Initialize>b__0()
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Execute(Action a, String key)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.InitializationEngine.InitializeModules()
+System.Configuration.Provider.ProviderException: Default Membership Provider must be specified.
+   at System.Web.Security.Membership.InitializeDefaultProvider(Boolean initializeDefaultProvider, MembershipSection settings)
+   at System.Web.Security.Membership.Initialize()
+   at System.Web.Security.Membership.get_Provider()
+   at System.Web.Security.Membership.GetUser(String username, Boolean userIsOnline)
+   at System.Web.Security.Membership.GetUser(String username)
+   at AlloyTraining.Business.Initialization.RegisterAdminInitializationModule.Initialize(InitializationEngine context) in C:\Projects\EpiserverTests\EpiserverTesting\EpiserverTesting\Business\Initialization\RegisterAdminInitializationModule.cs:line 43
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.<>c__DisplayClass2_0.<Initialize>b__0()
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Execute(Action a, String key)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.InitializationEngine.InitializeModules()

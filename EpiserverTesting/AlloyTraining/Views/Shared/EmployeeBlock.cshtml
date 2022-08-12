@@ -1,0 +1,8 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+
+@model AlloyTraining.Models.Blocks.EmployeeBlock
+
+<div class="block span">
+    @Model.FirstName @Model.LastName @(Model.HireDate==null?"":Model.HireDate.ToString("dddd, d MMMM yyyy"))
+</div>

@@ -1,0 +1,19 @@
+@model EventBlock
+
+<fieldset>
+    <legend>@Model.Title</legend>
+    @Model.Description
+    <br />
+    @Model.When at @Model.Where
+</fieldset>
+<style>
+    fieldset {
+        border: 1px black solid;
+        padding: 5px;
+    }
+
+        fieldset legend {
+            width: auto;
+            padding: 5px;
+        }
+</style>

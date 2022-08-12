@@ -1,0 +1,45 @@
+﻿@using System.Collections
+@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+@model AlloyTraining.Models.ViewModels.ObjectCachePageViewModel
+<div>
+    <div class="alert alert-info">Object Cache</div>
+    <div class="well well-small">
+        @Html.ContentLink("All Cached Objects", Model.CurrentPage.ContentLink, null,
+           htmlAttributes: new { @class = string.IsNullOrWhiteSpace(Model.FilteredBy) ? "btn btn-warning" : "btn" })
+
+        @Html.ContentLink("Any Content", Model.CurrentPage.ContentLink,
+           routeValues: new { filterBy = "content" },
+           htmlAttributes: new { @class = Model.FilteredBy == "content" ? "btn btn-warning" : "btn" })
+
+
+        @Html.ContentLink("Pages Only", Model.CurrentPage.ContentLink,
+           routeValues: new { filterBy = "pages" },
+           htmlAttributes: new { @class = Model.FilteredBy == "pages" ? "btn btn-warning" : "btn" })
+    </div>
+    <table class="table table-condensed table-bordered table-condensed">
+        <tr>
+            <th>Key</th>
+            <th>Type</th>
+            <th>@(string.IsNullOrWhiteSpace(Model.FilteredBy) ? "Value" : "Name (ID) Published")</th>
+        </tr>
+        @foreach (DictionaryEntry item in Model.CachedItems)
+        {
+            <tr>
+                <td>@item.Key</td>
+                <td>@item.Value.GetType()</td>
+                <td>
+                    @if (item.Value is IContent)
+                    {
+                        @((item.Value as IContent).Name)
+                        <span class="badge badge-warning">@((item.Value as IContent).ContentLink.ID)</span>
+                    }
+                    @if (item.Value is PageData)
+                    {
+                        @((item.Value as PageData).StartPublish)
+                    }
+                </td>
+            </tr>
+        }
+    </table>
+</div>

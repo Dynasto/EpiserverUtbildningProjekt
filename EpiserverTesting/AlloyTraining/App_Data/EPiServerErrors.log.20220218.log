@@ -1,0 +1,167 @@
+﻿2022-02-18 13:57:03,912 [103] ERROR EPiServer.Framework.Initialization.InitializationEngine: Initialize action failed for 'Initialize on class EPiServer.Data.DataInitialization, EPiServer.Data, Version=11.20.9.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7'
+System.NotSupportedException: The database schema for 'EPiServer.Find.Cms' is not installed. Update the database manually by running the cmdlet 'Initialize-EPiDatabase' in the package manager console or set createDatabaseSchema="true" on episerver.framework configuration element.
+   at EPiServer.Data.SchemaUpdates.Internal.DatabaseSchemaManagerImplementation.ThrowCreateDatabaseException(String displayName)
+   at EPiServer.Data.SchemaUpdates.Internal.DatabaseSchemaManagerImplementation.EnsureDatabaseSchema(DataAccessOptions dataAccessOptions)
+   at EPiServer.Data.DataInitialization.ValidateDatabaseSchema(InitializationEngine context)
+   at EPiServer.Data.DataInitialization.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.<>c__DisplayClass2_0.<Initialize>b__0()
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Execute(Action a, String key)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.InitializationEngine.InitializeModules()
+System.NotSupportedException: The database schema for 'EPiServer.Find.Cms' is not installed. Update the database manually by running the cmdlet 'Initialize-EPiDatabase' in the package manager console or set createDatabaseSchema="true" on episerver.framework configuration element.
+   at EPiServer.Data.SchemaUpdates.Internal.DatabaseSchemaManagerImplementation.ThrowCreateDatabaseException(String displayName)
+   at EPiServer.Data.SchemaUpdates.Internal.DatabaseSchemaManagerImplementation.EnsureDatabaseSchema(DataAccessOptions dataAccessOptions)
+   at EPiServer.Data.DataInitialization.ValidateDatabaseSchema(InitializationEngine context)
+   at EPiServer.Data.DataInitialization.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.<>c__DisplayClass2_0.<Initialize>b__0()
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Execute(Action a, String key)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.InitializationEngine.InitializeModules()
+2022-02-18 13:57:52,571 [107] ERROR EPiServer.Framework.Initialization.InitializationEngine: Initialize action failed for 'Initialize on class EPiServer.Data.DataInitialization, EPiServer.Data, Version=11.20.9.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7'
+System.NotSupportedException: The database schema for 'EPiServer.Find.Cms' is not installed. Update the database manually by running the cmdlet 'Initialize-EPiDatabase' in the package manager console or set createDatabaseSchema="true" on episerver.framework configuration element.
+   at EPiServer.Data.SchemaUpdates.Internal.DatabaseSchemaManagerImplementation.ThrowCreateDatabaseException(String displayName)
+   at EPiServer.Data.SchemaUpdates.Internal.DatabaseSchemaManagerImplementation.EnsureDatabaseSchema(DataAccessOptions dataAccessOptions)
+   at EPiServer.Data.DataInitialization.ValidateDatabaseSchema(InitializationEngine context)
+   at EPiServer.Data.DataInitialization.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.<>c__DisplayClass2_0.<Initialize>b__0()
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Execute(Action a, String key)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.InitializationEngine.InitializeModules()
+System.NotSupportedException: The database schema for 'EPiServer.Find.Cms' is not installed. Update the database manually by running the cmdlet 'Initialize-EPiDatabase' in the package manager console or set createDatabaseSchema="true" on episerver.framework configuration element.
+   at EPiServer.Data.SchemaUpdates.Internal.DatabaseSchemaManagerImplementation.ThrowCreateDatabaseException(String displayName)
+   at EPiServer.Data.SchemaUpdates.Internal.DatabaseSchemaManagerImplementation.EnsureDatabaseSchema(DataAccessOptions dataAccessOptions)
+   at EPiServer.Data.DataInitialization.ValidateDatabaseSchema(InitializationEngine context)
+   at EPiServer.Data.DataInitialization.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.<>c__DisplayClass2_0.<Initialize>b__0()
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Execute(Action a, String key)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.InitializationEngine.InitializeModules()
+2022-02-18 13:58:18,244 [107] ERROR EPiServer.Framework.Initialization.InitializationEngine: Initialize action failed for 'Initialize on class EPiServer.Data.DataInitialization, EPiServer.Data, Version=11.20.9.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7'
+System.NotSupportedException: The database schema for 'EPiServer.Find.Cms' is not installed. Update the database manually by running the cmdlet 'Initialize-EPiDatabase' in the package manager console or set createDatabaseSchema="true" on episerver.framework configuration element.
+   at EPiServer.Data.SchemaUpdates.Internal.DatabaseSchemaManagerImplementation.ThrowCreateDatabaseException(String displayName)
+   at EPiServer.Data.SchemaUpdates.Internal.DatabaseSchemaManagerImplementation.EnsureDatabaseSchema(DataAccessOptions dataAccessOptions)
+   at EPiServer.Data.DataInitialization.ValidateDatabaseSchema(InitializationEngine context)
+   at EPiServer.Data.DataInitialization.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.<>c__DisplayClass2_0.<Initialize>b__0()
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Execute(Action a, String key)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.InitializationEngine.InitializeModules()
+System.NotSupportedException: The database schema for 'EPiServer.Find.Cms' is not installed. Update the database manually by running the cmdlet 'Initialize-EPiDatabase' in the package manager console or set createDatabaseSchema="true" on episerver.framework configuration element.
+   at EPiServer.Data.SchemaUpdates.Internal.DatabaseSchemaManagerImplementation.ThrowCreateDatabaseException(String displayName)
+   at EPiServer.Data.SchemaUpdates.Internal.DatabaseSchemaManagerImplementation.EnsureDatabaseSchema(DataAccessOptions dataAccessOptions)
+   at EPiServer.Data.DataInitialization.ValidateDatabaseSchema(InitializationEngine context)
+   at EPiServer.Data.DataInitialization.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.<>c__DisplayClass2_0.<Initialize>b__0()
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Execute(Action a, String key)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.InitializationEngine.InitializeModules()
+2022-02-18 14:28:33,788 [103] ERROR EPiServer.Framework.Initialization.InitializationEngine: Initialize action failed for 'Initialize on class EPiServer.Data.DataInitialization, EPiServer.Data, Version=11.20.9.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7'
+System.NotSupportedException: The database schema for 'EPiServer.Find.Cms' is not installed. Update the database manually by running the cmdlet 'Initialize-EPiDatabase' in the package manager console or set createDatabaseSchema="true" on episerver.framework configuration element.
+   at EPiServer.Data.SchemaUpdates.Internal.DatabaseSchemaManagerImplementation.ThrowCreateDatabaseException(String displayName)
+   at EPiServer.Data.SchemaUpdates.Internal.DatabaseSchemaManagerImplementation.EnsureDatabaseSchema(DataAccessOptions dataAccessOptions)
+   at EPiServer.Data.DataInitialization.ValidateDatabaseSchema(InitializationEngine context)
+   at EPiServer.Data.DataInitialization.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.<>c__DisplayClass2_0.<Initialize>b__0()
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Execute(Action a, String key)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.InitializationEngine.InitializeModules()
+System.NotSupportedException: The database schema for 'EPiServer.Find.Cms' is not installed. Update the database manually by running the cmdlet 'Initialize-EPiDatabase' in the package manager console or set createDatabaseSchema="true" on episerver.framework configuration element.
+   at EPiServer.Data.SchemaUpdates.Internal.DatabaseSchemaManagerImplementation.ThrowCreateDatabaseException(String displayName)
+   at EPiServer.Data.SchemaUpdates.Internal.DatabaseSchemaManagerImplementation.EnsureDatabaseSchema(DataAccessOptions dataAccessOptions)
+   at EPiServer.Data.DataInitialization.ValidateDatabaseSchema(InitializationEngine context)
+   at EPiServer.Data.DataInitialization.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.<>c__DisplayClass2_0.<Initialize>b__0()
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Execute(Action a, String key)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.InitializationEngine.InitializeModules()
+2022-02-18 14:30:33,568 [103] ERROR EPiServer.Framework.Initialization.InitializationEngine: Initialize action failed for 'Initialize on class EPiServer.Data.DataInitialization, EPiServer.Data, Version=11.20.9.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7'
+System.NotSupportedException: The database schema for 'EPiServer.Find.Cms' is not installed. Update the database manually by running the cmdlet 'Initialize-EPiDatabase' in the package manager console or set createDatabaseSchema="true" on episerver.framework configuration element.
+   at EPiServer.Data.SchemaUpdates.Internal.DatabaseSchemaManagerImplementation.ThrowCreateDatabaseException(String displayName)
+   at EPiServer.Data.SchemaUpdates.Internal.DatabaseSchemaManagerImplementation.EnsureDatabaseSchema(DataAccessOptions dataAccessOptions)
+   at EPiServer.Data.DataInitialization.ValidateDatabaseSchema(InitializationEngine context)
+   at EPiServer.Data.DataInitialization.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.<>c__DisplayClass2_0.<Initialize>b__0()
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Execute(Action a, String key)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.InitializationEngine.InitializeModules()
+System.NotSupportedException: The database schema for 'EPiServer.Find.Cms' is not installed. Update the database manually by running the cmdlet 'Initialize-EPiDatabase' in the package manager console or set createDatabaseSchema="true" on episerver.framework configuration element.
+   at EPiServer.Data.SchemaUpdates.Internal.DatabaseSchemaManagerImplementation.ThrowCreateDatabaseException(String displayName)
+   at EPiServer.Data.SchemaUpdates.Internal.DatabaseSchemaManagerImplementation.EnsureDatabaseSchema(DataAccessOptions dataAccessOptions)
+   at EPiServer.Data.DataInitialization.ValidateDatabaseSchema(InitializationEngine context)
+   at EPiServer.Data.DataInitialization.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.<>c__DisplayClass2_0.<Initialize>b__0()
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Execute(Action a, String key)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.InitializationEngine.InitializeModules()
+2022-02-18 14:32:49,848 [115] ERROR EPiServer.Find.Cms.Module.IndexingModule: An exception occured while initializing the SearchClient. The type initializer for 'EPiServer.Find.Framework.SearchClient' threw an exception..
+System.TypeInitializationException: The type initializer for 'EPiServer.Find.Framework.SearchClient' threw an exception. ---> System.Configuration.ConfigurationErrorsException: The serviceUrl cannot be empty
+   at EPiServer.Find.Client.CreateFromConfig(Boolean bypassLicenseRestriction)
+   at EPiServer.Find.Framework.SearchClient..cctor()
+   --- End of inner exception stack trace ---
+   at EPiServer.Find.Framework.SearchClient.get_InternalInstance()
+   at EPiServer.Find.Cms.Module.IndexingModule.InitializeClient()
+System.TypeInitializationException: The type initializer for 'EPiServer.Find.Framework.SearchClient' threw an exception. ---> System.Configuration.ConfigurationErrorsException: The serviceUrl cannot be empty
+   at EPiServer.Find.Client.CreateFromConfig(Boolean bypassLicenseRestriction)
+   at EPiServer.Find.Framework.SearchClient..cctor()
+   --- End of inner exception stack trace ---
+   at EPiServer.Find.Framework.SearchClient.get_InternalInstance()
+   at EPiServer.Find.Cms.Module.IndexingModule.InitializeClient()
+2022-02-18 14:32:49,867 [115] ERROR EPiServer.Framework.Initialization.InitializationEngine: Initialize action failed for 'Initialize on class EPiServer.Find.Cms.Module.IndexingModule, EPiServer.Find.Cms, Version=13.4.5.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7'
+System.TypeInitializationException: The type initializer for 'EPiServer.Find.Framework.SearchClient' threw an exception. ---> System.Configuration.ConfigurationErrorsException: The serviceUrl cannot be empty
+   at EPiServer.Find.Client.CreateFromConfig(Boolean bypassLicenseRestriction)
+   at EPiServer.Find.Framework.SearchClient..cctor()
+   --- End of inner exception stack trace ---
+   at EPiServer.Find.Framework.SearchClient.get_InternalInstance()
+   at EPiServer.Find.Cms.Module.IndexingModule.InitializeClient()
+   at EPiServer.Find.Cms.Module.IndexingModule.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.<>c__DisplayClass2_0.<Initialize>b__0()
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Execute(Action a, String key)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.InitializationEngine.InitializeModules()
+System.TypeInitializationException: The type initializer for 'EPiServer.Find.Framework.SearchClient' threw an exception. ---> System.Configuration.ConfigurationErrorsException: The serviceUrl cannot be empty
+   at EPiServer.Find.Client.CreateFromConfig(Boolean bypassLicenseRestriction)
+   at EPiServer.Find.Framework.SearchClient..cctor()
+   --- End of inner exception stack trace ---
+   at EPiServer.Find.Framework.SearchClient.get_InternalInstance()
+   at EPiServer.Find.Cms.Module.IndexingModule.InitializeClient()
+   at EPiServer.Find.Cms.Module.IndexingModule.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.<>c__DisplayClass2_0.<Initialize>b__0()
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Execute(Action a, String key)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.InitializationEngine.InitializeModules()
+2022-02-18 14:34:39,167 [103] ERROR EPiServer.Find.Cms.Module.IndexingModule: An exception occured while initializing the SearchClient. The type initializer for 'EPiServer.Find.Framework.SearchClient' threw an exception..
+System.TypeInitializationException: The type initializer for 'EPiServer.Find.Framework.SearchClient' threw an exception. ---> System.Configuration.ConfigurationErrorsException: The serviceUrl cannot be empty
+   at EPiServer.Find.Client.CreateFromConfig(Boolean bypassLicenseRestriction)
+   at EPiServer.Find.Framework.SearchClient..cctor()
+   --- End of inner exception stack trace ---
+   at EPiServer.Find.Framework.SearchClient.get_InternalInstance()
+   at EPiServer.Find.Cms.Module.IndexingModule.InitializeClient()
+System.TypeInitializationException: The type initializer for 'EPiServer.Find.Framework.SearchClient' threw an exception. ---> System.Configuration.ConfigurationErrorsException: The serviceUrl cannot be empty
+   at EPiServer.Find.Client.CreateFromConfig(Boolean bypassLicenseRestriction)
+   at EPiServer.Find.Framework.SearchClient..cctor()
+   --- End of inner exception stack trace ---
+   at EPiServer.Find.Framework.SearchClient.get_InternalInstance()
+   at EPiServer.Find.Cms.Module.IndexingModule.InitializeClient()
+2022-02-18 14:34:39,182 [103] ERROR EPiServer.Framework.Initialization.InitializationEngine: Initialize action failed for 'Initialize on class EPiServer.Find.Cms.Module.IndexingModule, EPiServer.Find.Cms, Version=13.4.5.0, Culture=neutral, PublicKeyToken=8fe83dea738b45b7'
+System.TypeInitializationException: The type initializer for 'EPiServer.Find.Framework.SearchClient' threw an exception. ---> System.Configuration.ConfigurationErrorsException: The serviceUrl cannot be empty
+   at EPiServer.Find.Client.CreateFromConfig(Boolean bypassLicenseRestriction)
+   at EPiServer.Find.Framework.SearchClient..cctor()
+   --- End of inner exception stack trace ---
+   at EPiServer.Find.Framework.SearchClient.get_InternalInstance()
+   at EPiServer.Find.Cms.Module.IndexingModule.InitializeClient()
+   at EPiServer.Find.Cms.Module.IndexingModule.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.<>c__DisplayClass2_0.<Initialize>b__0()
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Execute(Action a, String key)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.InitializationEngine.InitializeModules()
+System.TypeInitializationException: The type initializer for 'EPiServer.Find.Framework.SearchClient' threw an exception. ---> System.Configuration.ConfigurationErrorsException: The serviceUrl cannot be empty
+   at EPiServer.Find.Client.CreateFromConfig(Boolean bypassLicenseRestriction)
+   at EPiServer.Find.Framework.SearchClient..cctor()
+   --- End of inner exception stack trace ---
+   at EPiServer.Find.Framework.SearchClient.get_InternalInstance()
+   at EPiServer.Find.Cms.Module.IndexingModule.InitializeClient()
+   at EPiServer.Find.Cms.Module.IndexingModule.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.<>c__DisplayClass2_0.<Initialize>b__0()
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Execute(Action a, String key)
+   at EPiServer.Framework.Initialization.Internal.ModuleNode.Initialize(InitializationEngine context)
+   at EPiServer.Framework.Initialization.InitializationEngine.InitializeModules()

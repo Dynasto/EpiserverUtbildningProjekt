@@ -1,0 +1,22 @@
+﻿@using EPiServer.Core
+@using EPiServer.Web.Mvc.Html
+
+@model AlloyTraining.Models.ViewModels.TeaserBlockViewModel
+
+<div class="media">
+    <div style="clear:both">
+        <div class="mediaImg">
+            @Html.PropertyFor(x => x.CurrentBlock.TeaserImage)
+            <img src="@Url.ContentUrl(Model.CurrentBlock.TeaserImage)" />
+        </div>
+        <div class="mediaText">
+            <h2 @Html.EditAttributes(x => x.CurrentBlock.TeaserHeading)>
+                @Model.CurrentBlock.TeaserHeading
+            </h2>
+            <p>
+                @Html.PropertyFor(m => m.CurrentBlock.TeaserText)
+            </p>
+            <small>There have been @Model.TodaysVisitorCount people here today</small>
+        </div>
+    </div>
+</div>
